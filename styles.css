@@ -1,0 +1,136 @@
+/* Configurações do corpo e container */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffe6e6; /* Fundo suave rosado */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Título principal */
+.title {
+    font-size: 28px;
+    color: #ff4d4d;
+    margin: 20px 0;
+}
+
+/* Seção da foto */
+.photo-section {
+    margin-bottom: 20px; /* Espaço entre a foto e o texto */
+}
+
+.photo {
+    width: 100%; /* Faz a foto ocupar toda a largura do container */
+    max-width: 350px; /* Define um tamanho máximo */
+    height: auto; /* Mantém a proporção original */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centraliza a foto */
+    display: block;
+}
+
+/* Legenda da foto */
+.photo-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* Texto principal */
+.photo-section + p {
+    text-align: justify; /* Texto alinhado dos dois lados */
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Seção da pergunta */
+.question-section {
+    margin-top: 20px;
+}
+
+.question {
+    font-size: 22px;
+    color: #ff4d4d;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Botões */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 25px;
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.yes-btn {
+    background-color: #ff6666;
+    color: white;
+}
+
+.no-btn {
+    background-color: #aaa;
+    color: white;
+}
+
+.no-btn.shrinking {
+    transform: scale(0); /* Diminui o botão */
+    opacity: 0; /* Torna-o invisível */
+    pointer-events: none; /* Impede clique no botão */
+}
+
+/* Caixa de amor */
+.love-popup {
+    display: none; /* Inicialmente oculta */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.love-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.love-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4d4d;
+}
